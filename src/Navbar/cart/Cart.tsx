@@ -12,15 +12,8 @@ interface CartProps {
 }
 
 const Cart: FC<CartProps> = ({ }) => {
-    const { openCart, setOpenCart, cart } = useContext(CartContext)
-    const [total, setTotal] = useState(0)
-    useEffect(()=>{
-        let totalToSet = 0
-        cart.forEach(item=>{
-            totalToSet += item.amount*Number(item.productData.price)          
-        })
-        setTotal(totalToSet)
-    })
+    const { openCart, setOpenCart, total} = useContext(CartContext)
+    
     return (
         <AnimatePresence>
 

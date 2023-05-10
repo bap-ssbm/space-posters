@@ -17,18 +17,12 @@ interface CartType {
 }
 interface CartArrayType extends Array<CartType> { }
 interface OrderSummaryProps {
-    data: CartArrayType
+    data: CartArrayType,
+    total:number
 }
 
-const OrderSummary: FC<OrderSummaryProps> = ({ data }) => {
-    const [total, setTotal] = useState(0);
-    useEffect(() => {
-        let totalToSet = 0
-        data.forEach(item => {
-            totalToSet += item.amount * Number(item.productData.price)
-        })
-        setTotal(totalToSet)
-    })
+const OrderSummary: FC<OrderSummaryProps> = ({ data , total}) => {
+    
     return (
         <div className='checkout-place-order-wrapper'>
             <div className='checkout-order-summary-wrapper'>

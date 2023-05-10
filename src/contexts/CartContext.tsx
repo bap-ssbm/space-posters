@@ -1,4 +1,4 @@
-import React, { FC, useReducer, createContext, useState} from 'react'
+import React, { FC, useReducer, createContext, useState, useEffect} from 'react'
 
 
 interface productType {
@@ -32,11 +32,15 @@ export const CartContext = createContext<{
     dispatch: React.Dispatch<any>;
     openCart: boolean;
     setOpenCart: React.Dispatch<React.SetStateAction<boolean>>;
+    total:number;
+    setTotal:React.Dispatch<React.SetStateAction<number>>
 }>({
     cart: [],
     dispatch: () => null,
     openCart: false,
-    setOpenCart: () => null
+    setOpenCart: () => null,
+    total:0,
+    setTotal: () => null
 });
 
 
@@ -47,6 +51,14 @@ const CartContextProvider: FC<CartContextProps> = ({ children }) => {
     
    
     const [openCart, setOpenCart] = useState(false)
+    const [total, setTotal] = useState(0)
+    useEffect(()=>{
+        let totalToSet = 0
+        cart.forEach(item=>{
+            totalToSet += item.amount*Number(item.productData.price)          
+        })
+        setTotal(totalToSet)
+    })
 
     const cartReducer = (state: CartArrayType, action: CartAction) => {
 
@@ -118,7 +130,7 @@ const CartContextProvider: FC<CartContextProps> = ({ children }) => {
 
 
     return (
-        <CartContext.Provider value={{ cart, dispatch,  openCart, setOpenCart }} >
+        <CartContext.Provider value={{ cart, dispatch,  openCart, setOpenCart, total, setTotal }} >
             {children}
         </CartContext.Provider>
     )

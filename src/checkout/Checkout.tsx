@@ -13,7 +13,7 @@ interface CheckoutProps {
 }
 
 const Checkout: FC<CheckoutProps> = ({ }) => {
-  const { cart } = useContext(CartContext)
+  const { cart, total } = useContext(CartContext)
   return (
     <div className='checkout-page-full-wrapper'>
 
@@ -34,7 +34,7 @@ const Checkout: FC<CheckoutProps> = ({ }) => {
             <Shipping />
             <Payment />
           </div>
-          <OrderSummary data={cart} />
+          <OrderSummary data={cart} total={total} />
 
         </form>
       </div>

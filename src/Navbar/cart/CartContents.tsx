@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import { CartContext } from '../../contexts/CartContext'
 import { useContext } from 'react'
 
@@ -7,10 +7,15 @@ interface CartContentsProps {
 }
 
 const MapProduct = ({ product }: any) => {
-    const { dispatch } = useContext(CartContext)
+    const { dispatch, setTotal } = useContext(CartContext)
+    const [amountInput, setAmountInput] = useState(product.amount)
    
-    const catchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const catchChange = (e: React.ChangeEvent<HTMLInputElement>) => { 
+        setTotal(1)
         dispatch({ type: e.target.valueAsNumber===0?"REMOVE_PRODUCT":"INCREMENT_PRODUCT_BY_ONE", numOfProduct: e.target.valueAsNumber, product: product.productData })
+        
+        setAmountInput(e.target.valueAsNumber)
+        
     }
     return (
         <div className='cart-item-wrapper'>
@@ -31,7 +36,7 @@ const MapProduct = ({ product }: any) => {
                     REMOVE
                 </button>
             </div>
-            <input onChange={catchChange} className='cart-item-number-input amount-input' type='number' value={product.amount} />
+            <input onChange={catchChange} className='cart-item-number-input amount-input' type='number' value={amountInput} />
 
         </div>
     )
