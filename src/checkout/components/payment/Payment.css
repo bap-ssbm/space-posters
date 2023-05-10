@@ -1,0 +1,18 @@
+.payment-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3%;
+}
+.expirationdate-securitycode-wrapper{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+.payment-desc-wrapper{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+}

@@ -1,0 +1,100 @@
+footer{
+    padding: 100px 5%;
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+.footer-left-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.footer-logo{
+    font-size: 35px;
+}
+.copyright{
+    font-size: 14px;
+    color: #9c9c9c;
+}
+.footer-link{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+    gap: 20%;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.signup-form{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+.signup-form>input{
+    flex-grow: 1;
+    background: none;
+    outline: none;
+    border: white 1px solid;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    padding: 10px;
+    height: 50px;
+}
+.signup-form>button{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    background: none;
+    outline: none;
+    border: white 1px solid;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    height: 50px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.signup-form>button:hover{
+    scale: 1.05;
+}
+.sign-up-desc{
+    font-size: 18px;
+}
+.instagram{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+}
+.instagram>img{
+    height: 30px;
+}
+
+@media (min-width: 1024px){
+    footer{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        text-align: start;
+        align-content: start;
+    }
+    .footer-left-wrapper{ 
+        align-items: start;
+    }
+    .footer-link{
+        justify-content: start;
+    }
+    .footer-right{
+        align-items: end;
+    }
+}

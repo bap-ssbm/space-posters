@@ -1,0 +1,24 @@
+{
+    "Voyager1":{
+        "title":"Voyager 1",
+        "price":"49.99",
+        "description":"Voyager 1 is a space probe launched by NASA on September 5, 1977. Part of the Voyager program to study the outer Solar System, Voyager 1 was launched 16 days after its twin, Voyager 2.",
+        "dimension1":"24",
+        "dimension2":"36",
+        "imgUrl":"/Images/Voyager-01-p-1080.jpeg",
+        "mockupImgUrl":"/Images/Voyager 1 Mockup-p-1080.jpeg",
+        "zoomImgUrl":"/Images/Voyager-01 Zoom-p-1080.jpeg",
+        "link":"/product/voyager-1"
+    },
+    "Voyager2":{
+        "title":"Voyager 2",
+        "price":"49.99",
+        "description":"Voyager 2 is a space probe launched by NASA on August 20, 1977, to study the outer planets. Part of the Voyager program, it was launched 16 days before its twin, Voyager 1.",
+        "dimension1":"24",
+        "dimension2":"36",
+        "imgUrl":"/Images/Voyager-02.jpg",
+        "mockupImgUrl":"/Images/V2 Mockup Single.jpg",
+        "zoomImgUrl":"/Images/V2 Zoom.jpg",
+        "link":"/product/voyager-2"
+    }
+}

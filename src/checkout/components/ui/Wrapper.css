@@ -1,0 +1,32 @@
+.summary-wrapper{
+    border: 1px solid black;
+    flex-grow: 1;
+}
+.checkout-wrapper-top-section{
+    padding:  25px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout-wrapper-title{
+    font-size: 20px;
+    font-weight: 400;
+}
+.checkout-required{
+    font-size: 14px;
+}
+.checkout-wrapper-bottom-section{
+    padding:  25px 15px;
+}
+@media (min-width: 768px) {
+    .checkout-wrapper-title{
+        font-size: 22px;
+    }
+    .checkout-wrapper-top-section{
+        padding:  25px 35px;
+    }
+    .checkout-wrapper-bottom-section{
+        padding:  20px 35px;
+    }
+}

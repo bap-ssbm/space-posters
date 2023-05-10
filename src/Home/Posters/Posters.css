@@ -1,0 +1,210 @@
+#posters {
+    padding: 1% 5%;
+    padding-bottom: 10%;
+}
+
+.posters-section-wrapper {
+    width: 100%;
+    place-content: center;
+
+}
+
+
+.posters-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.posters-title {
+    font-family: "Neoneon", sans-serif;
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 300;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.posters-img-mobile {
+    width: 100%;
+}
+.posters-img-wrapper-desktop{
+    display: none;
+}
+.poster-info-wrapper {
+    padding: 5%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+.poster-info-title {
+    font-size: 33px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.shipping {
+    padding: 5px 10px;
+    background-color: #ff5c5f;
+    width: fit-content;
+    color: white;
+    font-weight: 500;
+}
+
+.posters-description {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.dimensions {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.amount-input {
+    font-size :14px;
+    padding-left: 15px;
+    height: 50px;
+    width: 60px;
+    border: 1px solid black;
+    color: black;
+    font-family:'IBM Plex Mono', monospace;
+    text-align: center;
+}
+.amount-input::placeholder{
+    color: black;
+    text-align: center;
+}
+.amount-input:focus{
+    
+    outline: none;
+}
+.purchase-btns{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.more-photos{
+    border-bottom: 1px dashed #9c9c9c;
+    width: fit-content;
+    color : #9c9c9c;
+    font-size: 16px;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.more-photos:hover{
+    color: black;
+    border-color: black;
+}
+@media (min-width: 768px) {
+    
+    .posters-title {
+        margin-bottom: 50px;
+     }
+    .posters-img-mobile {
+        display: none;
+    }
+    .posters-img-wrapper-desktop{
+        display: flex;
+        position: absolute;
+        left: 5%;
+        height: 45vw;
+        z-index: 3;
+        top: 50%;
+        
+    }
+    .posters-img-desktop{
+        
+        transform: translateY(-50%);
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    }
+    .poster-info-wrapper-wrapper{
+        display: flex;
+        position: relative;
+        justify-content: end;
+        width: 100%;
+        padding: 0 5%;
+    }
+    .poster-info-wrapper{
+        width: 70%;
+        padding-left: 13%;
+        padding-right: 50px;
+        gap: 0;
+    }
+    .poster-info-title {
+        font-size: 33px;
+        margin-top: 20px;
+        font-weight: 400;
+    }
+    
+    .price {
+        font-size: 20px;
+        margin-top: 2%;
+    }
+    
+    .shipping {
+        padding: 8px 13px;
+        margin-top: 7px;
+        background-color: #ff5c5f;
+        
+    }
+    
+    .posters-description {
+        margin: 20px 0px;
+    }
+    
+
+    
+ 
+    .purchase-btns{
+        margin-top: 45px;
+    }
+    .more-photos{
+        margin-top: 40px;
+    }
+}
+@media (min-width: 1024px) {
+    .posters-wrapper {
+        gap: 130px;
+    }
+ 
+
+    .posters-img-wrapper-desktop{
+       
+        position: relative;
+        left: 0;
+        height: 45vw;
+        top: 0;
+        
+    }
+    .posters-img-desktop{
+        
+        transform: translateY(0%) translateX(5%);;
+        
+    }
+
+    .poster-info-wrapper-wrapper{
+        
+        padding: 0;
+        
+    }
+    .poster-info-wrapper{
+        width: 70%;
+        padding-left: 8%;
+        gap: 0;
+        padding-right: 50px;
+        transform: translateY(8%) translateX(-5%);
+    }
+ 
+}
+
+
+

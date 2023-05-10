@@ -1,0 +1,29 @@
+.mobile-nav-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100dvw;
+    z-index: 30;
+    background-color:rgba(22,22,22,.98) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 23px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.mobile-logo{
+    margin-bottom: 15px;
+    width: 60%;
+    max-width: 300px;
+}
+.mobile-close{
+    width: 30px;
+    position: absolute;
+    top: 40px;
+    left: 5%;
+    cursor: pointer;
+}

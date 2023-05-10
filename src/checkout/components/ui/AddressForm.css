@@ -1,0 +1,24 @@
+.address-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+}
+.city-zip-state-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (min-width: 768px) {
+    .city-zip-state-wrapper{
+     
+        flex-direction: row;
+ 
+    }
+}

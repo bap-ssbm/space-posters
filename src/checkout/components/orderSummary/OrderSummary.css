@@ -1,0 +1,98 @@
+.checkout-order-summary-wrapper{
+    border: 1px solid black;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0 15px 50px -4px rgba(0,0,0,.12);
+}
+.checkout-order-summary-title{
+    padding: 20px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.order-summary-posters-section-wrapper{
+    padding:20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.order-summary-poster-title{
+    font-size: 14px;
+}
+.order-summary-posters-items-wrapper{
+    color: #a2a4a6;
+    display: flex;
+    justify-content: space-between;
+}
+.order-summary-posters-overall-total-wrapper{
+    padding:20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.order-summary-posters-title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.order-summary-posters-title-name{
+    color: #a2a4a6;
+}
+.order-summary-total-wrapper{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.order-summary-total-title{
+    font-size: 15px;
+}
+.checkout-order-summary-total-price{
+    font-weight: 500;
+    font-size: 17px;
+}
+.order-summary-discount-wrapper{
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.order-summary-discount-wrapper>p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.discount-form-wrapper{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+.discount-input-wrapper{
+    flex-grow: 1;
+}
+.checkout-place-order-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.place-order-btn{
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    transition-duration: 300ms;
+}
+.place-order-btn:hover{
+    background-color: #1f1f1f;
+}
+@media (min-width: 1024px){
+    .checkout-place-order-wrapper{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 20px;
+        max-width: 330px;
+        height: fit-content;
+    }
+    .checkout-order-summary-wrapper{
+        margin-top: 0;
+    }
+   
+}

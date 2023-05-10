@@ -1,0 +1,11 @@
+.btn-style{
+    transform: all;
+    transition-duration: 0.5s;
+}
+
+.hover-btn-light:hover{
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.39);
+}
+.hover-btn-dark:hover{
+    text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.555);
+}

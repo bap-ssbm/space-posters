@@ -1,0 +1,20 @@
+.shipping-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 3%;
+}
+.shipping-description-wrapper{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.shipping-description-wrapper>h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+.shipping-description-wrapper>p{
+    color: #a2a4a6;
+    font-size: 13px;
+}
